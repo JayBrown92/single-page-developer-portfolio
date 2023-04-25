@@ -13,8 +13,14 @@ export default function Home() {
     <>
       <section id="hero-section">
         {" "}
-        <Image src={DeveloperImg} alt="image of developer adam keyes" />
-        <h1>Nice to meet you! I&apos;m Adam Keyes. </h1>{" "}
+        <Image
+          src={DeveloperImg}
+          width={174}
+          height={383}
+          className="relative bottom-28 mx-auto"
+          alt="image of developer adam keyes"
+        />
+        <h1>Nice to meet you! I&apos;m Adam Keyes. </h1>
         <p>
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.{" "}
