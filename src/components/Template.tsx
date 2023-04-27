@@ -8,30 +8,31 @@ type PropTypes = {
   children: React.ReactNode;
 };
 
-type IconTypes = {
-  src: any;
-  alt: string;
-};
-
-const icons: IconTypes[] = [
-  {
-    src: GithubIcon,
-    alt: "github icon",
-  },
-  {
-    src: FrontendMentorIcon,
-    alt: "Frontend Mentor icon",
-  },
-  {
-    src: LinkedInIcon,
-    alt: "LinkedIn icon",
-  },
-  {
-    src: TwitterIcon,
-    alt: "Twitter icon",
-  },
-];
 export default function Template({ children }: PropTypes) {
+  type IconTypes = {
+    src: any;
+    alt: string;
+  };
+
+  const icons: IconTypes[] = [
+    {
+      src: GithubIcon,
+      alt: "github icon",
+    },
+    {
+      src: FrontendMentorIcon,
+      alt: "Frontend Mentor icon",
+    },
+    {
+      src: LinkedInIcon,
+      alt: "LinkedIn icon",
+    },
+    {
+      src: TwitterIcon,
+      alt: "Twitter icon",
+    },
+  ];
+
   const logo = <h4 className="basis-full text-center">adamkeyes</h4>;
   const iconMap = icons.map((icon, index) => {
     const { src, alt } = icon;
