@@ -1,8 +1,8 @@
 import Image from "next/image";
-import GithubIcon from "../../public/icon-github.svg";
-import FrontendMentorIcon from "../../public/icon-frontend-mentor.svg";
-import LinkedInIcon from "../../public/icon-linkedin.svg";
-import TwitterIcon from "../../public/icon-twitter.svg";
+import GithubIcon from "../../../public/icon-github.svg";
+import FrontendMentorIcon from "../../../public/icon-frontend-mentor.svg";
+import LinkedInIcon from "../../../public/icon-linkedin.svg";
+import TwitterIcon from "../../../public/icon-twitter.svg";
 
 type PropTypes = {
   children: React.ReactNode;

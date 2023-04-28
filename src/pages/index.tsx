@@ -1,32 +1,17 @@
 import Image from "next/image";
 import Link from "next/link";
-import DeveloperImg from "../../public/image-profile-mobile.webp";
 import DesignProjImg from "../../public/thumbnail-project-1-small.webp";
 import ELearningProjImg from "../../public/thumbnail-project-2-small.webp";
 import TodoProjImg from "../../public/thumbnail-project-3-small.webp";
 import EntertainmentProjImg from "../../public/thumbnail-project-4-small.webp";
 import MemoryProjImg from "../../public/thumbnail-project-5-small.webp";
 import ArtProjImg from "../../public/thumbnail-project-6-small.webp";
+import Hero from "components/components/UI/Hero ";
 
 export default function Home() {
   return (
     <>
-      <section id="hero-section">
-        {" "}
-        <Image
-          src={DeveloperImg}
-          width={174}
-          height={383}
-          className="relative bottom-28 mx-auto"
-          alt="image of developer adam keyes"
-        />
-        <h1>Nice to meet you! I&apos;m Adam Keyes. </h1>
-        <p>
-          Based in the UK, I&apos;m a front-end developer passionate about
-          building accessible web apps that users love.{" "}
-        </p>{" "}
-        <Link href="#contact-me-section">Contact Me</Link>
-      </section>
+      <Hero />
       <section id="experience-section">
         {" "}
         <h3>HTML</h3> <p>4 Years Experience</p> <h3> CSS </h3>{" "}
