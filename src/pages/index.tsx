@@ -6,21 +6,24 @@ import TodoProjImg from "../../public/thumbnail-project-3-small.webp";
 import EntertainmentProjImg from "../../public/thumbnail-project-4-small.webp";
 import MemoryProjImg from "../../public/thumbnail-project-5-small.webp";
 import ArtProjImg from "../../public/thumbnail-project-6-small.webp";
-import Hero from "components/components/UI/Hero ";
+import ringsPattern from "../../public/pattern-rings.svg";
+import Hero from "../components/content/Hero";
+import Experience from "components/components/content/Experience ";
 
 export default function Home() {
   return (
     <>
       <Hero />
-      <section id="experience-section">
-        {" "}
-        <h3>HTML</h3> <p>4 Years Experience</p> <h3> CSS </h3>{" "}
-        <p>4 Years Experience</p> <h3>JavaScript</h3> <p>4 Years Experience</p>{" "}
-        <h3> Accessibility</h3> <p>4 Years Experience </p>
-        <h3> React </h3>
-        <p>3 Years Experience</p> <h3> Sass</h3> <p> 3 Years Experience </p>
-      </section>
+      <Experience />
+
       <section id="projects-section">
+        <Image
+          src={ringsPattern}
+          width={530}
+          height={129}
+          alt="pattern for hero section design consiting of multiple flat rings"
+          className="relative -right-52 bottom-11  "
+        />
         <h2>Projects</h2> <Link href="#contact-me-section">Contact Me</Link>
         <Image src={DesignProjImg} alt="Screenshot of the design project" />
         <h3>DESIGN PORTFOLIO </h3>

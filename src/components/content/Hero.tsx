@@ -3,10 +3,12 @@ import Link from "next/link";
 import DeveloperImg from "../../../public/image-profile-mobile.webp";
 import ringsPattern from "../../../public/pattern-rings.svg";
 import circlePattern from "../../../public/pattern-circle.svg";
+import Section from "../UI/Section";
+import Button from "../UI/Button";
 
 export default function Hero() {
   return (
-    <section id="hero-section" className="relative overflow-x-hidden pb-20">
+    <Section id={"hero-section"} className="pb-20">
       {" "}
       <Image
         src={DeveloperImg}
@@ -30,12 +32,7 @@ export default function Hero() {
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.{" "}
         </p>{" "}
-        <Link
-          href="#contact-me-section"
-          className=" border-b-2	border-color-accent pb-3 font-bold uppercase tracking-widest transition-colors hover:text-color-accent "
-        >
-          Contact Me
-        </Link>
+        <Button>CONTACT ME</Button>
       </div>
       <Image
         src={ringsPattern}
@@ -51,6 +48,6 @@ export default function Hero() {
         alt="pattern for hero section design consiting of multiple flat rings"
         className="absolute -right-16 top-32 z-[-1]"
       />
-    </section>
+    </Section>
   );
 }
