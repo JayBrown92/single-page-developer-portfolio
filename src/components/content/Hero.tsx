@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+
 import DeveloperImg from "../../../public/image-profile-mobile.webp";
 import ringsPattern from "../../../public/pattern-rings.svg";
 import circlePattern from "../../../public/pattern-circle.svg";
