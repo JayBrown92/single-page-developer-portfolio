@@ -17,7 +17,7 @@ export default function Home() {
         className="absolute -right-48 z-10 -translate-y-1/2  "
       />
       <Projects />
-      <section id="contact-section">
+      <section id="contact-me-section">
         {" "}
         <h3> Contact</h3>{" "}
         <p>
