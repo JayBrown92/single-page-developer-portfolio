@@ -51,7 +51,7 @@ export default function Projects() {
   return (
     <Section id="projects-section" className=" py-20 ">
       <Container className="flex flex-wrap justify-between gap-y-10">
-        <h2 className="basis-1/2">Projects</h2>{" "}
+        <h2>Projects</h2>
         <Button className="" href="#contact-me-section">
           Contact me
         </Button>

@@ -3,7 +3,7 @@ import Link from "next/link";
 type Props = {
   children: React.ReactNode;
   href: string;
-  className: string;
+  className?: string;
 };
 export default function Button({ children, href, className }: Props) {
   return (
