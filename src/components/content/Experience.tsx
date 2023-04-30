@@ -32,7 +32,7 @@ export default function Experience() {
   return (
     <Section
       id={"experience-section"}
-      className="relative grid gap-6 py-10 text-center  before:absolute before:left-4  before:right-4 before:top-0 before:mx-auto before:border-y-[1px] before:border-color-primary after:absolute after:bottom-0  after:left-4 after:right-4 after:mx-auto after:border-y-[1px] after:border-color-primary  "
+      className=" grid gap-6 py-10  text-center before:absolute  before:left-4 before:right-4 before:top-0 before:mx-auto before:border-y-[1px] before:border-color-primary after:absolute  after:bottom-0 after:left-4 after:right-4 after:mx-auto after:border-y-[1px] after:border-color-primary "
     >
       {ExpContent.map((content, index) => {
         const { header, text } = content;
