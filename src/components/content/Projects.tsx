@@ -51,13 +51,16 @@ export default function Projects() {
   ];
   return (
     <Section id="projects-section" className="py-10">
-      <Container className="flex flex-wrap justify-between gap-10">
-        <h2>Projects</h2> <Button href="#contact-me-section">Contact me</Button>
+      <Container className="flex flex-wrap justify-between gap-y-10">
+        <h2 className="basis-1/2">Projects</h2>{" "}
+        <Button className="" href="#contact-me-section">
+          Contact me
+        </Button>
         {projects.map((project, index) => {
           const { image, altText, title, stack } = project;
 
           return (
-            <div key={index} className="flex flex-wrap gap-5">
+            <div key={index} className=" flex basis-full flex-wrap gap-5">
               <Image src={image} alt={altText} />
               <div className="flex flex-wrap gap-2">
                 <h3 className="basis-full">{title}</h3>
