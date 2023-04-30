@@ -32,7 +32,7 @@ export default function Hero() {
           Based in the UK, I&apos;m a front-end developer passionate about
           building accessible web apps that users love.{" "}
         </p>{" "}
-        <Button>CONTACT ME</Button>
+        <Button href="#contact-me-section">CONTACT ME</Button>
       </div>
       <Image
         src={ringsPattern}
