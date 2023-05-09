@@ -49,21 +49,28 @@ export default function Projects() {
     },
   ];
   return (
-    <Section id="projects-section" className=" py-20 ">
-      <Container className="flex flex-wrap justify-between gap-y-10">
+    <Section id="projects-section">
+      <Container className="flex flex-wrap items-center justify-between gap-y-10 py-20    md:py-14 ">
         <h2>Projects</h2>
-        <Button className="" href="#contact-me-section">
-          Contact me
-        </Button>
+        <Button href="#contact-me-section">Contact me</Button>
         {projects.map((project, index) => {
           const { image, altText, title, stack } = project;
 
           return (
-            <div key={index} className=" flex basis-full flex-wrap gap-5">
-              <Image src={image} alt={altText} />
-              <div className="flex flex-wrap gap-2">
-                <h3 className="basis-full">{title}</h3>
-                <ul className="flex basis-full gap-x-4">
+            <div
+              key={index}
+              className=" flex w-full flex-wrap  content-between gap-4 md:w-1/2 "
+            >
+              <Image
+                src={image}
+                width={322}
+                height={253}
+                alt={altText}
+                className=" h-[253px]"
+              />
+              <div className="flex  flex-wrap gap-2">
+                <h4 className="W-full">{title}</h4>
+                <ul className="flex  w-full gap-4">
                   {stack.map((tech, index) => {
                     return (
                       <>
@@ -73,8 +80,10 @@ export default function Projects() {
                   })}
                 </ul>
               </div>
-              <Button href="#">VIEW PROJECT</Button>
-              <Button href="#">VIEW CODE</Button>
+              <div className="flex gap-x-4">
+                <Button href="#">VIEW PROJECT</Button>
+                <Button href="#">VIEW CODE</Button>
+              </div>
             </div>
           );
         })}

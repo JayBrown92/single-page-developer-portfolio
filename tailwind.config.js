@@ -33,7 +33,7 @@ module.exports = {
         },
       ],
       "lg-2": [
-        "2rem",
+        "1.25rem",
         {
           lineHeight: "2rem",
           fontWeight: "700",

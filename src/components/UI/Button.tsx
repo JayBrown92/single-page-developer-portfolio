@@ -11,7 +11,7 @@ export default function Button({ children, href, className }: Props) {
       {" "}
       <Link
         href={href}
-        className={` whitespace-nowrap	border-b-2 border-color-accent pb-3 font-bold uppercase tracking-widest transition-colors hover:text-color-accent ${className}`}
+        className={` box-content	whitespace-nowrap border-b-2 border-color-accent pb-2 font-bold uppercase tracking-widest transition-colors hover:text-color-accent ${className}`}
       >
         {children}
       </Link>
