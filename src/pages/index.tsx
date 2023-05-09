@@ -15,7 +15,7 @@ export default function Home() {
         width={530}
         height={129}
         alt="pattern for hero section design consiting of multiple flat rings"
-        className="absolute -right-48 z-10 -translate-y-1/2  "
+        className="absolute -right-48 z-10 -translate-y-1/2 md:-right-96 "
       />
       <Projects />
       <Contact />
