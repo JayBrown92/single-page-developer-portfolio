@@ -12,6 +12,15 @@ module.exports = {
     fontFamily: {
       "space-grotesk": ["Space Grotesk", ...fontFamily.sans],
     },
+    container: {
+      center: true,
+      padding: {
+        DEFAULT: "1rem",
+        md: "2rem",
+        lg: "4rem",
+      },
+    },
+
     colors: {
       "primary-bg": "#151515",
       "secondary-bg": "#242424",
@@ -32,13 +41,7 @@ module.exports = {
           fontWeight: "700",
         },
       ],
-      "lg-2": [
-        "1.25rem",
-        {
-          lineHeight: "2rem",
-          fontWeight: "700",
-        },
-      ],
+
       xl: [
         "2rem",
         {
@@ -59,7 +62,7 @@ module.exports = {
         "2.5rem",
         {
           lineHeight: "2.5rem",
-          letterSpacing: "-0.15rem",
+          letterSpacing: "-0.15625rem",
           fontWeight: "700",
         },
       ],
@@ -67,12 +70,24 @@ module.exports = {
         "4.5rem",
         {
           lineHeight: "4.5rem",
-          letterSpacing: "-0.15rem",
+          letterSpacing: "-0.15625rem",
+          fontWeight: "700",
+        },
+      ],
+      "2xl-3": [
+        "5.5rem",
+        {
+          lineHeight: "5.5rem",
+          letterSpacing: "-0.15625rem",
           fontWeight: "700",
         },
       ],
     },
-    extend: {},
+    extend: {
+      maxWidth: {
+        "screen-lg": "1228px",
+      },
+    },
   },
   plugins: [],
 };

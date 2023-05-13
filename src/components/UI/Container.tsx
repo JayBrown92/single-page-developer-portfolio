@@ -5,7 +5,9 @@ type Props = {
 
 export default function Container({ children, className }: Props) {
   return (
-    <div className={`container mx-auto px-4 md:px-8 ${className}`}>
+    <div
+      className={`container relative overflow-hidden lg:max-w-screen-lg ${className}`}
+    >
       {children}
     </div>
   );
