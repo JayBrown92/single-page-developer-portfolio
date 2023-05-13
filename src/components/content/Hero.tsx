@@ -11,9 +11,15 @@ import Container from "../UI/Container";
 
 export default function Hero() {
   return (
-    <Section id={"hero-section"} className="z-[-1]">
-      <Container className="relative isolate z-10 flex  flex-col justify-between pb-20 md:flex-row md:pb-48 lg:pb-48 xl:pb-72 ">
-        {" "}
+    <Section id={"hero-section"}>
+      <Container className="relative  z-10 flex flex-col justify-between overflow-visible pb-20 md:flex-row md:pb-48 lg:pb-48 xl:pb-72 ">
+        <Image
+          src={ringsPattern}
+          width={530}
+          height={129}
+          alt="pattern for hero section design consiting of multiple flat rings"
+          className="absolute -left-52 top-0 z-[-1]"
+        />{" "}
         <Image
           src={DeveloperImg}
           width={174}
@@ -67,13 +73,6 @@ export default function Hero() {
           <Button href="#contact-me-section">CONTACT ME</Button>
         </div>
       </Container>
-      <Image
-        src={ringsPattern}
-        width={530}
-        height={129}
-        alt="pattern for hero section design consiting of multiple flat rings"
-        className="absolute -left-52 top-0 z-[-1]"
-      />
     </Section>
   );
 }
