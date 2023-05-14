@@ -6,15 +6,15 @@ import Section from "../UI/Section";
 export default function Contact() {
   return (
     <Section id="contact-me-section" className=" bg-secondary-bg">
-      <Container className="flex flex-wrap justify-center gap-y-5    px-4 text-center  after:absolute after:bottom-0 after:left-4 after:right-4 after:mx-auto after:border-y-[1px] after:border-color-secondary/50 md:max-w-md md:gap-10 lg:justify-between lg:text-left">
-        <div className="flex w-full flex-col gap-y-8 lg:w-[445px] ">
+      <Container className="flex flex-wrap justify-center gap-y-5 text-center  after:absolute after:bottom-0 after:left-4 after:right-4 after:mx-auto after:border-y-[1px] after:border-color-secondary/50 md:gap-10 md:after:left-8 md:after:right-8 lg:justify-between lg:text-left lg:after:left-16 lg:after:right-16">
+        <div className="flex w-full max-w-[445px] flex-col gap-y-8 ">
           <h2> Contact</h2>
           <p>
             I would love to hear about your project and how I could help. Please
             fill in the form, and I&apos;ll get back to you as soon as possible.
           </p>
         </div>
-        <form className="  grid w-full  gap-y-8 text-left uppercase text-color-secondary/50 lg:w-[445px]">
+        <form className="  grid w-full  max-w-[445px] gap-y-8 text-left uppercase text-color-secondary/50">
           <div>
             <input
               className="h-10 w-full border-b-2  border-color-primary/50 bg-secondary-bg  outline-0	placeholder:-translate-y-1.5 placeholder:translate-x-4 focus:border-color-accent focus:bg-secondary-bg active:border-color-accent disabled:border-color-disabled"

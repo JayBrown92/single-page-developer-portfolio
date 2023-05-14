@@ -48,7 +48,7 @@ export default function Hero() {
           width={129}
           height={129}
           alt="pattern for hero section design consiting of multiple flat rings"
-          className=" absolute -right-16 bottom-[360px] z-20 md:bottom-20 lg:bottom-[155px] lg:right-[445px]"
+          className=" absolute -right-16 bottom-[25rem] z-20 md:bottom-20 lg:bottom-[155px] lg:right-[445px]"
         />
         <div
           id="hero-content"
