@@ -7,7 +7,7 @@ type Props = {
 };
 export default function Section({ className, children, id }: Props) {
   return (
-    <section id={id} className={` relative overflow-x-hidden ${className}`}>
+    <section id={id} className={` relative ${className}`}>
       {children}
     </section>
   );

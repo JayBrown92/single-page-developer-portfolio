@@ -55,9 +55,13 @@ export default function Projects() {
     },
   ];
   return (
-    <Section id="projects-section">
-      <Container className="grid gap-y-10 md:grid-cols-2  lg:gap-x-8 lg:gap-y-20">
-        <div className="col-span-2 flex items-center justify-between">
+    <Section
+      id="projects-section"
+      className=" z-0
+    "
+    >
+      <Container className="grid grid-cols-1 gap-y-10 md:grid-cols-2  lg:gap-x-8 lg:gap-y-20">
+        <div className="flex items-center justify-between lg:col-span-2">
           <h2 className=" ">Projects</h2>
           <Button href="#contact-me-section" className="">
             Contact me
@@ -69,14 +73,14 @@ export default function Projects() {
           return (
             <div
               key={index}
-              className=" flex  flex-wrap  content-between gap-4 "
+              className=" flex  w-full flex-wrap content-between  gap-4 "
             >
               <Image
                 src={image[0]}
-                width={322}
+                width={343}
                 height={253}
                 alt={altText}
-                className=" h-[253px] lg:hidden"
+                className="  lg:hidden"
               />
               <div className="group relative hidden cursor-pointer  items-center justify-center before:absolute  before:inset-0 before:transition-colors  before:hover:bg-primary-bg/75 lg:flex lg:flex-col">
                 <Image src={image[1]} width={540} height={400} alt={altText} />

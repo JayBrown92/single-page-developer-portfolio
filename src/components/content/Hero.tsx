@@ -12,7 +12,7 @@ import Container from "../UI/Container";
 export default function Hero() {
   return (
     <Section id={"hero-section"}>
-      <Container className="relative z-10 flex flex-col justify-between overflow-visible pt-0 md:flex-row md:pb-48 lg:pb-48 xl:pb-72 ">
+      <Container className="relative z-10 flex flex-col justify-between gap-y-10 overflow-visible pt-0 md:flex-row md:pb-48 lg:pb-48 xl:pb-72 ">
         <Image
           src={ringsPattern}
           width={530}
@@ -24,7 +24,7 @@ export default function Hero() {
           src={DeveloperImg}
           width={174}
           height={383}
-          className=" mx-auto  md:hidden"
+          className=" relative -top-[131px] mx-auto -mb-[131px] md:hidden"
           alt="image of developer adam keyes"
         />
         <Image
@@ -48,7 +48,7 @@ export default function Hero() {
           width={129}
           height={129}
           alt="pattern for hero section design consiting of multiple flat rings"
-          className="absolute -right-16 z-20  md:bottom-20 lg:bottom-[155px] lg:right-[445px]"
+          className=" absolute -right-16 bottom-[360px] z-20 md:bottom-20 lg:bottom-[155px] lg:right-[445px]"
         />
         <div
           id="hero-content"
