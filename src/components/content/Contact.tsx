@@ -6,7 +6,7 @@ import Section from "../UI/Section";
 export default function Contact() {
   return (
     <Section id="contact-me-section" className=" bg-secondary-bg">
-      <Container className="flex flex-wrap justify-center gap-y-5  overflow-visible  px-4 text-center  after:absolute after:bottom-0 after:left-4 after:right-4 after:mx-auto after:border-y-[1px] after:border-color-secondary/50 md:max-w-md md:gap-10 lg:justify-between lg:text-left">
+      <Container className="flex flex-wrap justify-center gap-y-5    px-4 text-center  after:absolute after:bottom-0 after:left-4 after:right-4 after:mx-auto after:border-y-[1px] after:border-color-secondary/50 md:max-w-md md:gap-10 lg:justify-between lg:text-left">
         <div className="flex w-full flex-col gap-y-8 lg:w-[445px] ">
           <h2> Contact</h2>
           <p>

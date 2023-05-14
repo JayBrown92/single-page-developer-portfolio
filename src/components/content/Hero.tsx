@@ -12,7 +12,7 @@ import Container from "../UI/Container";
 export default function Hero() {
   return (
     <Section id={"hero-section"}>
-      <Container className="relative z-10 flex flex-col justify-between gap-y-10 overflow-visible pt-0 md:flex-row md:pb-48 lg:pb-48 xl:pb-72 ">
+      <Container className="relative z-10 flex flex-col justify-between gap-y-10 overflow-visible !pt-0 md:flex-row md:pb-44 lg:pb-48 xl:pb-72 ">
         <Image
           src={ringsPattern}
           width={530}
@@ -32,7 +32,7 @@ export default function Hero() {
           width={322}
           height={600}
           priority
-          className="absolute -right-0 -top-32 order-2  hidden min-w-[322px] md:block lg:hidden"
+          className="absolute -right-0 -top-[88px] order-2  hidden md:block lg:hidden"
           alt="image of developer adam keyes"
         />
         <Image

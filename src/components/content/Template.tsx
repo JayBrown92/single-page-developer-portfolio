@@ -42,14 +42,14 @@ export default function Template({ children }: PropTypes) {
   return (
     <>
       <header className="bg-primary-bg/0">
-        <Container className=" flex flex-col items-center justify-center  gap-6 py-7  md:flex-row md:flex-nowrap md:justify-between md:gap-0">
+        <Container className=" flex flex-col items-center justify-center  gap-6 py-7 md:flex-row md:flex-nowrap  md:justify-between md:gap-0 md:py-7 lg:py-7">
           {logo}
           <div className="flex  justify-center gap-6 ">{iconMap}</div>
         </Container>
       </header>
       {children}
-      <footer className=" flex flex-wrap justify-center  gap-6 py-10">
-        <Container className=" flex flex-col items-center justify-center gap-6 py-5  md:flex-row md:flex-nowrap md:justify-between md:gap-0">
+      <footer className=" flex flex-wrap justify-center  gap-6 ">
+        <Container className=" flex flex-col items-center justify-center gap-6 py-7 md:flex-row md:flex-nowrap  md:justify-between md:gap-0 md:py-7 lg:py-7">
           {logo}
           <div className="flex  justify-center gap-6 ">{iconMap}</div>
         </Container>
