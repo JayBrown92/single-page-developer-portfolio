@@ -60,8 +60,8 @@ export default function Projects() {
       className=" z-0
     "
     >
-      <Container className="grid grid-cols-1 gap-y-10 md:grid-cols-2  lg:gap-x-8 lg:gap-y-20">
-        <div className="flex items-center justify-between lg:col-span-2">
+      <Container className="grid grid-cols-1 gap-x-6 gap-y-10  md:grid-cols-2 lg:gap-x-8 lg:gap-y-20">
+        <div className="flex items-center justify-between md:col-span-2">
           <h2 className=" ">Projects</h2>
           <Button href="#contact-me-section" className="">
             Contact me

@@ -68,7 +68,7 @@ export default function Hero() {
           </h1>
           <p className=" max-w-[445px]">
             Based in the UK, I&apos;m a front-end developer passionate about
-            building accessible web apps that users love.{" "}
+            building accessible web apps that users love.
           </p>{" "}
           <Button href="#contact-me-section">CONTACT ME</Button>
         </div>
