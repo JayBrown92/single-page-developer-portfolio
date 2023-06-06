@@ -22,7 +22,10 @@ export default function Contact() {
     email: "",
     message: "",
   });
-  const [formErrors, setFormErrors] = useState<Boolean>(false);
+
+  const [areFormErrors, setAreFormErrors] = useState<boolean>();
+  const [formError, setFormError] = useState<string>("");
+
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -62,7 +65,7 @@ export default function Contact() {
     validateInput(name as keyof FormInputTypes);
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formEl = e.target as HTMLFormElement;
     const isValid = formEl.checkValidity();
@@ -75,14 +78,21 @@ export default function Contact() {
         email: "",
         message: "",
       }));
-      setFormErrors(false);
-      console.log("here");
+      setFormData((prevState) => ({
+        ...prevState,
+        name: "",
+        email: "",
+        message: "",
+      }));
+      setFormError("Thank you for submitting the form.");
+      setAreFormErrors(false);
+      formEl.reset();
     } else {
       for (const key of formData.keys()) {
         validateInput(key as keyof FormInputTypes);
       }
-      setFormErrors(true);
-      console.log("here 2");
+      setFormError("Please fix errors in the form.");
+      setAreFormErrors(true);
     }
   };
 
@@ -101,13 +111,12 @@ export default function Contact() {
           onSubmit={handleSubmit}
           noValidate
         >
-          {formErrors && (
-            <>
-              <h4 className="text-color-disabled">
-                Please fix the errors on the form.
-              </h4>
-            </>
+          {areFormErrors ? (
+            <h4 className="text-color-disabled">{formError}</h4>
+          ) : (
+            <h4>{formError}</h4>
           )}
+
           <div>
             <input
               className="h-10 w-full border-b-2  border-color-primary/50 bg-secondary-bg  outline-0	placeholder:-translate-y-1.5 placeholder:translate-x-4    focus:border-color-accent active:border-color-accent "
