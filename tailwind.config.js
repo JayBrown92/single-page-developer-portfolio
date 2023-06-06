@@ -27,7 +27,7 @@ module.exports = {
       "color-primary": "#d9d9d9",
       "color-secondary": "#ffffff",
       "color-accent": "#4EE1A0",
-      "color-disabled": "FF6F5B",
+      "color-disabled": "#FF6F5B",
       "transparent-bg": "transparent",
     },
     fontSize: {
