@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
           name="description"
           content="Single page website for Adam Keyes, web developer"
         />
-        <link rel="icon" type="image/x-icon" href="../../public/favicon.ico" />
+        <link rel="shortcut icon" href="/favicon.ico" />
       </Head>
       <main className="relative overflow-x-hidden">
         <Component {...pageProps} />
